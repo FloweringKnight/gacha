@@ -1,0 +1,3 @@
+/home/D/CLionProjects/gacha/build/CMakeFiles/gacha.dir
+/home/D/CLionProjects/gacha/build/CMakeFiles/edit_cache.dir
+/home/D/CLionProjects/gacha/build/CMakeFiles/rebuild_cache.dir

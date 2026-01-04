@@ -1,0 +1,1 @@
+/usr/bin/cc -Wl,--dependency-file=CMakeFiles/gacha.dir/link.d CMakeFiles/gacha.dir/src/main.c.o CMakeFiles/gacha.dir/src/config.c.o CMakeFiles/gacha.dir/src/random.c.o CMakeFiles/gacha.dir/src/matcher.c.o CMakeFiles/gacha.dir/src/output.c.o CMakeFiles/gacha.dir/src/gacha.c.o CMakeFiles/gacha.dir/src/list.c.o -o gacha
