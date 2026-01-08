@@ -4,6 +4,9 @@
 #include <string.h>
 #include <sys/stat.h>
 
+#define _XOPEN_SOURCE 500
+#include <unistd.h>
+
 #ifdef _WIN32
     #include <direct.h>
     #include <windows.h>

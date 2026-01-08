@@ -23,6 +23,7 @@
 - ✅ 跨平台支持（Windows、Linux、macOS）
 - ✅ 配置文件自动生成和管理
 - ✅ 友好的命令行界面
+- ✅ 版本信息显示（-v/--version）
 
 ## 系统要求
 
@@ -69,6 +70,8 @@ cl /std:c99 /Fe:gacha.exe src/*.c /I src
 gacha -c              # 启动 chaos 模式
 gacha -g [数字]       # 启动 gacha 模式（默认抽取 1 次）
 gacha -h              显示帮助信息
+gacha -v              显示版本信息
+gacha --version       显示版本信息
 ```
 
 ### Chaos 模式
@@ -298,6 +301,7 @@ gacha/
 - 抽卡次数与历史总匹配次数关联
 - 支持批量抽取和统计显示
 - 余额不足时确认提示
+- 新增版本显示功能（-v/--version 参数）
 
 ### v1.0
 - Chaos 模式：随机生成字母并匹配字典单词

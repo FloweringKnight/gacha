@@ -67,6 +67,7 @@ void print_usage() {
     printf("  -c              chaos 模式，启动随机字母生成与单词匹配\n");
     printf("  -g [数字]       gacha 模式，从 gachalist 随机抽取内容\n");
     printf("  -h, --help      显示帮助信息\n");
+    printf("  -v, --version   显示版本信息\n");
 }
 
 // 打印帮助信息
@@ -314,10 +315,18 @@ int run_gacha_mode(int draw_count) {
 }
 
 int main(int argc, char* argv[]) {
-    // 1. 初始化配置文件
+    // 1. 检查版本参数（优先级最高）
+    for (int i = 1; i < argc; i++) {
+        if (strcmp(argv[i], "-v") == 0 || strcmp(argv[i], "--version") == 0) {
+            printf("%s\n", PROGRAM_VERSION);
+            return 0;
+        }
+    }
+
+    // 2. 初始化配置文件
     init_config_files();
 
-    // 2. 解析命令行参数
+    // 3. 解析命令行参数
     if (argc < 2) {
         print_usage();
         return 1;
