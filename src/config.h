@@ -1,6 +1,8 @@
 #ifndef GACHA_CONFIG_H
 #define GACHA_CONFIG_H
 
+#define PROGRAM_VERSION "v1.0.0"
+
 #include <stddef.h>
 
 // 配置结构体
